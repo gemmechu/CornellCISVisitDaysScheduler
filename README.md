@@ -104,4 +104,3 @@ Again, bonne chance! I commend and salute you.
 2. Add more automated checks that the results satisfy various conditions.
 Now that the Model object contains all the input data and output information in easily
 accessible form, this should be easy to get started on.
-3. 
