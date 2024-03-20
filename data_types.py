@@ -6,7 +6,7 @@ import pytz
 ET = pytz.timezone('US/Eastern')
 
 MONTH = 3
-YEAR = 2023
+YEAR = 2024
 
 class Day(Enum):
     MONDAY = 0
@@ -23,9 +23,9 @@ class Day(Enum):
 
     def date(self):
         dates = {
-            Day.MONDAY: 27,
-            Day.TUESDAY: 28,
-            Day.WEDNESDAY: 29,
+            Day.MONDAY: 25,
+            Day.TUESDAY: 26,
+            Day.WEDNESDAY: 27,
         }
         return dates[self]
 
@@ -211,8 +211,8 @@ class TimeZone(Enum):
 class AvailabilityType(Enum):
     ITHACA = "Ithaca"
     CORNELL_TECH = "CT"
-    ONLY_ZOOM = "Zoom Only"
-    NOT_AVAILABLE = "Not Available"
+    ONLY_ZOOM = "Virtually"
+    NOT_AVAILABLE = "Cannot attend"
 
 class MatchType(Enum):
     ADVOCATE = 0
@@ -234,21 +234,22 @@ class Phase(Enum):
     STUDENT_AVAILABILITY = 4
 
 class ResearchArea(Enum):
-    THEORY_OF_COMPUTING = "Theory"
+    THEORY_OF_COMPUTING = "THEORY"
     ARTIFICIAL_INTELLIGENCE = "AI"
-    COMPUTATIONAL_BIOLOGY = "Computational Biology"
+    COMPUTATIONAL_BIOLOGY = "COMP BIO"
     HUMAN_INTERACTION = "HCI"
     NATURAL_LANGUAGE_PROCESSING = "NLP"
     PROGRAMMING_LANGUAGES = "PL"
-    ROBOTICS = "Robotics"
-    SECURITY = "Security"
-    SYSTEMS_AND_NETWORKING = "Systems"
-    VISION = "Vision"
-    GRAPHICS = "Graphics"
-    ARCHITECTURE = "Architecture"
-    SCIENTIFIC_COMPUTING = "Scientific Computing"
-    SOFTWARE_ENGINEERING = "Software Engineering"
+    ROBOTICS = "ROBOTICS"
+    SECURITY = "SECURITY"
+    SYSTEMS_AND_NETWORKING = "SYSTEMS"
+    VISION = "VISION"
+    GRAPHICS = "GRAPHICS"
+    ARCHITECTURE = "ARCH"
+    SCIENTIFIC_COMPUTING = "SCIENTIFIC COMPUTING"
+    SOFTWARE_ENGINEERING = "SOFTWARE ENGINEERING"
     MACHINE_LEARNING = "ML"
+    Database = "DB"
 
     def __init__(self, ignored_value):
         self.students = []
@@ -272,7 +273,8 @@ class Person:
         for interval in self.times_offered:
             if time_interval in interval:
                 offering = self.modes_offered[time_interval.start.day_number()]
-                assert offering != AvailabilityType.NOT_AVAILABLE, str(self)
+               
+                # assert offering != AvailabilityType.NOT_AVAILABLE, str(self)
                 return offering
         else:
             return AvailabilityType.NOT_AVAILABLE

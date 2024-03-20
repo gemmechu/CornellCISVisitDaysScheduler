@@ -5,8 +5,8 @@ from pprint import pprint
 
 from data_types import TimeSlot, AbsoluteTime, TimeInterval, Event
 
-input_path = "/Users/spencer/everything/VisitDayRepoFresh/ExampleFrom2023/input/"
-output_path = "/Users/spencer/everything/VisitDayRepoFresh/output/"
+input_path = "/Users/gemmechu/Documents/Cornell/CornellCISVisitDaysScheduler/2024/input/"
+output_path = "/Users/gemmechu/Documents/Cornell/CornellCISVisitDaysScheduler/2024/output/"
 student_input_path = input_path + "student-data.csv"
 professor_input_path = input_path + "faculty-data.csv"
 student_text_schedule_path = output_path + "studentTextSchedules/"
@@ -29,26 +29,27 @@ class StudentDataKeys(Enum):
     FIRST_NAME = 'First Name'
     LAST_NAME = 'Last Name'
     NICKNAME = 'Nickname'
-    MONDAY_TYPE = '27th'
-    TUESDAY_TYPE = '28th'
-    WEDNESDAY_TYPE = '29th'
+    MONDAY_TYPE = '25th'
+    TUESDAY_TYPE = '26th'
+    WEDNESDAY_TYPE = '27th'
     TIME_ZONE = 'Time Zone'
-    MONDAY_EARLIEST_MEETING_TIME = '27th Earliest Meeting Time'
-    TUESDAY_EARLIEST_MEETING_TIME = '28th Latest Meeting Time'
-    WEDNESDAY_EARLIEST_MEETING_TIME = '29th Latest Meeting Time'
+    MONDAY_EARLIEST_MEETING_TIME = '25th Earliest Meeting Time'
+    TUESDAY_EARLIEST_MEETING_TIME = '26th Latest Meeting Time'
+    WEDNESDAY_EARLIEST_MEETING_TIME = '27th Latest Meeting Time'
     PREFERENCE1 = 'Preference 1'
     PREFERENCE2 = 'Preference 2'
     PREFERENCE3 = 'Preference 3'
     PREFERENCE4 = 'Preference 4'
     PREFERENCE5 = 'Preference 5'
     PREFERENCE6 = 'Preference 6'
+    PREFERENCE7 = 'Preference 6'
+    PREFERENCE8 = 'Preference 6'
     ADDITIONAL_FACULTY = 'Additional Faculty'
-    PREFERENCE7 = 'Preference 7'
-    PREFERENCE8 = 'Preference 8'
     PRIMARY_ADVOCATE = 'Advocate 1'
     ADVOCATE2 = 'Advocate 2'
     ADVOCATE3 = 'Advocate 3'
     ADVOCATE4 = 'Advocate 4'
+    
 
 
 EARLY_DEPARTURES = {

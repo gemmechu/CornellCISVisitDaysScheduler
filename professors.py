@@ -75,9 +75,9 @@ class Professor(Person):
     @staticmethod
     def make_professors_from_raw(raw_dictionary):
         full_name = raw_dictionary[pdk.NAME.value]
-        primary_area = ResearchArea(raw_dictionary[pdk.AREA1.value])
+        primary_area = ResearchArea(raw_dictionary[pdk.AREA1.value].upper())
         raw = raw_dictionary[pdk.AREA2.value].strip()
-        secondary_area = None if len(raw) == 0 else ResearchArea(raw)
+        secondary_area = None if len(raw) == 0 else ResearchArea(raw.upper())
         email_address = raw_dictionary[pdk.EMAIL.value]
         monday_availability_type = AvailabilityType(raw_dictionary[pdk.MONDAY_TYPE.value])
         tuesday_availability_type = AvailabilityType(raw_dictionary[pdk.TUESDAY_TYPE.value])

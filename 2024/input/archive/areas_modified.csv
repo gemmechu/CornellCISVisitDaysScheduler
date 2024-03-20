@@ -1,0 +1,118 @@
+First Name,Last Name,Concentrations,Area 1,Area 2,Area 3,Area 4,Unnamed: 7,Unnamed: 8,Areas,FacultyName
+Mohamed,Abdelfattah,AI,ML,,,,,,AI,Mohamed Abdelfattah
+Jayadev,Acharya,"AI, Theory",ML,Theory,,,,,Arch,Jayadev Acharya
+Rachit,Agarwal,"Systems, Theory",Systems,Theory,,,,,Comp Bio,Rachit Agarwal
+David,Albonesi,Systems ,Systems,Arch,,,,,Crypto,David Albonesi
+Lorenzo,Alvisi,Systems,Systems,,,,,,Databases,Lorenzo Alvisi
+Yoav,Artzi,AI ,NLP,,,,,,Graphics,Yoav Artzi
+Shiri,Azenkot,Scientific Computing,Scientific,HCI,,,,,HCI,Shiri Azenkot
+Kavita,Bala,"AI, PL, Scientific Computing",AI,Graphics,Vision,,,,ML,Kavita Bala
+Sid,Banerjee,Theory,Theory,,,,,,NLP,Sid Banerjee
+Christopher,Batten,Systems,Systems,Arch,,,,,PL,Christopher Batten
+Tapomayukh,Bhattacharjee,AI,Robotics,ML,,,,,Robotics,Tapomayukh Bhattacharjee
+David,Bindel,Scientific Computing,Scientific,,,,,,Scientific Computing,David Bindel
+Ken,Birman,Systems,Systems,Security,,,,,Security,Ken Birman
+Florentina ,Bunea,AI,Theory,ML,,,,,Software Engineering,Florentina  Bunea
+Mark ,Campbell,AI,Robotics,ML,,,,,Systems,Mark  Campbell
+Claire,Cardie,AI,NLP,,,,,,Theory,Claire Cardie
+Eshan,Chattopadhyay,Theory,Theory,,,,,,Vision,Eshan Chattopadhyay
+Sanjiban,Choudhury,"AI, ML",Robotics, ,,,,,,Sanjiban Choudhury
+Tanzeem,Choudhury,AI,ML,,,,,,,Tanzeem Choudhury
+Alex ,Conway,"Systems, Theory",Systems,Theory,,,,,,Alex  Conway
+Anil,Damle,Scientific Computing,Scientific,,,,,,,Anil Damle
+Cristian,Danescu-Niculescu-Mizil,Scientific Computing,AI,NLP,,,,,,Cristian Danescu-Niculescu-Mizil
+Abe,Davis,"AI, ",Graphics,Vision,HCI,,,,,Abe Davis
+Christopher,De Sa,"AI, Systems",ML,Systems,,,,,,Christopher De Sa
+Sarah,Dean,"AI, Theory",ML,Theory,,,,,,Sarah Dean
+Nicola,Dell,AI,HCI,,,,,,,Nicola Dell
+Shimon,Edelman,AI,AI,,,,,,,Shimon Edelman
+Ahmed ,El Alaoui,Theory,Theory,,,,,,,Ahmed  El Alaoui
+Kevin,Ellis,AI,ML, ,,,,,,Kevin Ellis
+Deborah,Estrin,Systems,Systems,,,,,,,Deborah Estrin
+Silvia,Ferrari,AI,AI,Vision,,,,,,Silvia Ferrari
+Nate,Foster,"PL, Systems",PL,Systems,Security,,,,,Nate Foster
+Sainyam,Galhotra,"AI, Systems",AI,DB,Systems,,,,,Sainyam Galhotra
+Nikhil,Garg,"AI, Theory",AI,Theory,,,,,,Nikhil Garg
+Ziv,Goldfeld,Theory,Theory,ML,,,,,,Ziv Goldfeld
+Carla ,Gomes,AI,AI,Comp Bio,,,,,,Carla  Gomes
+Giulia,Guidi,Comp Bio,Scientific Computing,Systems,  ,,,,,Giulia Guidi
+Francois,Guimbretiere,Systems,Systems,HCI,,,,,,Francois Guimbretiere
+Udit ,Gupta,Systems,Systems,ML,,,,,,Udit  Gupta
+Joe,Halpern,"AI, PL, Theory",AI,PL,Theory,,,,,Joe Halpern
+Bharath,Hariharan,"AI, Scientific Computing",Vision,Scientific Computing,ML,,,,,Bharath Hariharan
+Haym,Hirsh,AI,AI,,,,,,,Haym Hirsh
+Guy,Hoffman,AI,AI,Robotics,,,,,,Guy Hoffman
+Justin,Hsu,"PL, Theory",PL,Theory,,,,,,Justin Hsu
+Thorsten ,Joachims ,AI,ML,,,,,,,Thorsten  Joachims 
+Wendy,Ju,AI,HCI,,,,,,,Wendy Ju
+Ari,Juels,Systems,Security,Systems,,,,,,Ari Juels
+malte,jung,AI,HCI,,,,,,,malte jung
+Nathan ,Kallus,AI,ML,,,,,,,Nathan  Kallus
+Michael,Kim,Theory ,Theory,ML,,,,,,Michael Kim
+Jon,Kleinberg,"AI, Theory",HCI,Theory,,,,,,Jon Kleinberg
+Robert,Kleinberg,"AI, Theory",AI,Theory,,,,,,Robert Kleinberg
+Allison,Koenecke,AI,ML,,,,,,,Allison Koenecke
+Dexter,Kozen,"PL, Theory",PL,Theory,,,,,,Dexter Kozen
+Hadas,Kress-Gazit,AI,Robotics,,,,,,,Hadas Kress-Gazit
+Volodymyr,Kuleshov,AI,Comp bio,Scientific Computing,ML,,,,,Volodymyr Kuleshov
+Daniel,Lee,AI,Robotics,ML,,,,,,Daniel Lee
+Lillian,Lee,AI,NLP,,,,,,,Lillian Lee
+Owolabi,Legunsen,"PL,Systems",Software Engineering,PL,Systems,,,,,Owolabi Legunsen
+Emaad,Manzoor,AI,ML,,,,,,,Emaad Manzoor
+Steve,Marschner,Scientific Computing,Graphics,Vision,,,,,,Steve Marschner
+José,Martínez,Systems,Systems,Arch,,,,,,José Martínez
+David,Matteson,AI,ML, ,,,,,,David Matteson
+David,Mimno,AI,AI,ML,,,,,,David Mimno
+Kristina,Monakhova,AI,ML,,,,,,,Kristina Monakhova
+Greg,Morrisett ,"PL, Systems",PL,Systems,,,,,,Greg Morrisett 
+Andrew,Myers,PL,PL,Security,Systems,,,,,Andrew Myers
+Mor,Naaman,Systems,Systems,HCI,,,,,,Mor Naaman
+Rajalakshmi,Nandakumar,Systems,Systems,,,,,,,Rajalakshmi Nandakumar
+anil,nerode,AI,AI,Theory,,,,,,anil nerode
+Tapan,Parikh,"AI, Systems",AI,Systems,,,,,,Tapan Parikh
+FranceScientific Computinga,Parise ,,AI,Theory,,,,,,FranceScientific Computinga Parise 
+Rafael,Pass,"AI, Theory",Crypto,Theory,AI,,,,,Rafael Pass
+Kirsten,Petersen,AI,Robotics,,,,,,,Kirsten Petersen
+Emma ,Pierson,AI,ML,HCI,,,,,,Emma  Pierson
+Thomas,Ristenpart,"Systems, Theory",Systems,Security,Theory,,,,,Thomas Ristenpart
+Thijs,Roumen,Systems,Systems,HCI,,,,,,Thijs Roumen
+Alexander ,Rush,AI,NLP,ML,,,,,,Alexander  Rush
+Mert,Sabuncu,AI,Vision,ML,,,,,,Mert Sabuncu
+Adrian,Sampson,PL,PL,Arch,Systems,,,,,Adrian Sampson
+Katya,Scientific Computingheinberg,"Scientific Computing, Theory",Scientific,Theory,,,,,,Katya Scientific Computingheinberg
+Fred,Schneider,"PL, Systems",Security,systems,PL,,,,,Fred Schneider
+Ziv,Goldfeld,Theory,Theory,,,,,,,Ziv Goldfeld
+Bart ,Selman,AI,AI,,,,,,,Bart  Selman
+Phoebe,Sengers,AI,AI,HCI,,,,,,Phoebe Sengers
+Vitaly,Shmatikov,Systems,Systems,Security,AI,,,,,Vitaly Shmatikov
+David,Shmoys,"Scientific Computing, Theory",Comp bio,Theory,,,,,,David Shmoys
+Alexandra,Silva,"PL, Theory",PL,Theory,,,,,,Alexandra Silva
+Rachee,Singh,Systems,Security,Systems,,,,,,Rachee Singh
+Noah,Snavely,"AI, Scientific Computing",Graphics,Scientific Computing,Vision,HCI,,,,Noah Snavely
+Karthik,Sridharan,"AI, Theory",ML,Theory,,,,,,Karthik Sridharan
+Noah,Stephens-Davidowitz,Theory,Theory,Security,Crypto,,,,,Noah Stephens-Davidowitz
+Ed,Suh,Systems,Systems,Security,Arch,,,,,Ed Suh
+Jennifer,Sun,AI,HCI,ML,Vision,,,,,Jennifer Sun
+Wen ,Sun,AI,ML,Theory,Robotics,,,,,Wen  Sun
+Kevin,Tang,"Systems, Theory",Systems,Theory,,,,,,Kevin Tang
+Eva,Tardos,Theory,Theory,,,,,,,Eva Tardos
+Angelique,Taylor,AI,Robotics,,,,,,,Angelique Taylor
+Alex,Townsend,Scientific Computing, Scientific Computing,,,,,,,Alex Townsend
+Immanuel,Trummer,Systems,Databases,,,,,,,Immanuel Trummer
+Robbert,Van Renesse,Systems,Systems,,,,,,,Robbert Van Renesse
+Marten,van Schijndel,AI,AI,NLP,ML,,,,,Marten van Schijndel
+Aditya,Vashistha,AI,HCI,,,,,,,Aditya Vashistha
+Aaron,Wagner,Theory,Theory,Security,,,,,,Aaron Wagner
+Fei,Wang,AI,ML,,,,,,,Fei Wang
+Hakim,Weatherspoon,Systems,Systems,,,,,,,Hakim Weatherspoon
+Kilian,Weinberger,AI,ML,,,,,,,Kilian Weinberger
+Stephen,Wicker,"AI, Theory",AI,Theory,,,,,,Stephen Wicker
+Mark ,Wilde,Theory,Theory,,,,,,,Mark  Wilde
+David,Williamson,Theory,Theory,,,,,,,David Williamson
+Qian,Yang,"AI, Scientific Computing",AI,Scientific Computing,,,,,,Qian Yang
+Fengqi,You,Theory,Theory,,,,,,,Fengqi You
+Christine Lee,Yu,Theory,Theory,,,,,,,Christine Lee Yu
+Haiyuan,Yu,Scientific Computing,Comp bio,,,,,,,Haiyuan Yu
+Ramin,Zabih,"AI, Theory",vision,Theory,,,,,,Ramin Zabih
+Cheng,Zhang,Systems,HCI,Systems,,,,,,Cheng Zhang
+Zhiru,Zhang,Systems,Systems,,,,,,,Zhiru Zhang

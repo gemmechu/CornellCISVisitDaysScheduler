@@ -70,7 +70,7 @@ class Student(Person):
             nickname = None
 
         research_areas_raw = raw_dictionary[sdk.AREAS.value].split(",")
-        research_areas = [ResearchArea(raw.strip()) for raw in research_areas_raw]
+        research_areas = [ResearchArea(raw.strip().upper()) for raw in research_areas_raw]
         primary_area = research_areas[0]
         secondary_area = None if len(research_areas) == 1 else research_areas[1]
 
