@@ -1,0 +1,148 @@
+Welcome to the CBC MILP Solver 
+Version: Trunk
+Build Date: Oct 28 2021 
+
+Starting solution of the Linear programming relaxation problem using Primal Simplex
+
+Coin0506I Presolve 400905 (-299335) rows, 125313 (-259707) columns and 1517445 (-1114707) elements
+Clp0030I 5 infeas 19.580733, obj 77952.036 - mu 0.0027351147, its 105, 10113 interior
+Clp0030I 9 infeas 1.2388492, obj 75306.012 - mu 0.00091161373, its 105, 10753 interior
+Clp0030I 13 infeas 6.1206467, obj 76375.78 - mu 0.00010127016, its 105, 11179 interior
+Clp0030I 17 infeas 0.093513232, obj 75058.925 - mu 3.3753344e-05, its 105, 12083 interior
+Clp0030I 21 infeas 0.044405501, obj 75056.747 - mu 1.1249989e-05, its 105, 12506 interior
+Clp0030I 25 infeas 0.078028798, obj 75072.158 - mu 1.2497488e-06, its 105, 12977 interior
+Clp0030I 29 infeas 0.0048377902, obj 75055.056 - mu 4.1654129e-07, its 105, 13438 interior
+Clp1000I sum of infeasibilities 0.00129284 - average 3.2248e-09, 111875 fixed columns
+Coin0506I Presolve 12975 (-387930) rows, 13437 (-111876) columns and 95064 (-1422381) elements
+Clp0006I 0  Obj 75055.048 Primal inf 0.0010423739 (221) Dual inf 2.86e+15 (13437)
+Clp0029I End of values pass after 13437 iterations
+Clp0014I Perturbing problem by 0.001% of 1.0711419 - largest nonzero change 2.9966364e-05 ( 0.0014983182%) - largest zero change 2.9907206e-05
+Clp0000I Optimal - objective value 75058
+Clp0000I Optimal - objective value 75058
+Coin0511I After Postsolve, objective 75058, infeasibilities - dual 0 (0), primal 0 (0)
+Clp0006I 0  Obj 75058 Dual inf 5.999998 (2)
+Clp0014I Perturbing problem by 0.001% of 1.0036373 - largest nonzero change 2.9986897e-05 ( 0.0014993448%) - largest zero change 2.9837808e-05
+Clp0000I Optimal - objective value 75058
+Clp0000I Optimal - objective value 75058
+Clp0000I Optimal - objective value 75058
+Coin0511I After Postsolve, objective 75058, infeasibilities - dual 0 (0), primal 0 (0)
+Clp0032I Optimal objective 75058 - 0 iterations time 7.652, Presolve 0.79, Idiot 6.81
+
+Starting MIP optimization
+Cgl0002I 259707 variables fixed
+Cgl0003I 0 fixed, 0 tightened bounds, 383091 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 382109 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 362854 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 341061 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 322396 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 306050 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 289399 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 271357 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 254181 strengthened rows, 0 substitutions
+Cgl0004I processed model has 289840 rows, 125313 columns (125313 integer (125313 of which binary)) and 3545045 elements
+Coin3009W Conflict graph built in 0.918 seconds, density: 0.040%
+Cgl0015I Clique Strengthening extended 16727 cliques, 260073 were dominated
+Cbc0038I Initial state - 1142 integers unsatisfied sum - 356.355
+Cbc0038I Pass   1: (58.31 seconds) suminf.    0.00000 (0) obj. -33812 iterations 5318
+Cbc0038I Solution found of -33812
+Cbc0038I Rounding solution of -48891 is better than previous of -33812
+
+Cbc0038I Before mini branch and bound, 124137 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 46494 rows 125313 columns, reduced to 1505 rows 1167 columns
+Cbc0038I Mini branch and bound improved solution from -48891 to -74958 (61.27 seconds)
+Cbc0038I Round again with cutoff of -74968.9
+Cbc0038I Reduced cost fixing fixed 104751 variables on major pass 2
+Cbc0038I Pass   2: (61.61 seconds) suminf.    0.29500 (1) obj. -74968.9 iterations 1890
+Cbc0038I Pass   3: (61.71 seconds) suminf.    0.29500 (1) obj. -74968.9 iterations 222
+Cbc0038I Solution found of -74983
+Cbc0038I Rounding solution of -74998 is better than previous of -74983
+
+Cbc0038I Before mini branch and bound, 124105 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 46494 rows 125313 columns, reduced to 1531 rows 1193 columns
+Cbc0038I Mini branch and bound improved solution from -74998 to -75058 (63.88 seconds)
+Cbc0038I After 63.93 seconds - Feasibility pump exiting with objective of -75058 - took 6.47 seconds
+Cbc0012I Integer solution of -75058 found by feasibility pump after 0 iterations and 0 nodes (63.95 seconds)
+Cbc0001I Search completed - best objective -75058, took 0 iterations and 0 nodes (64.08 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Total time (CPU seconds):       62.19   (Wallclock seconds):       66.95
+
+14260
+4185
+2484
+963
+Did not schedule requested meeting between Andrea Miller 
+                    and top 2 choice Rachee Singh
+Did not schedule requested meeting between Anmol Kabra 
+                    and top 2 choice Kilian Weinberger
+Did not schedule requested meeting between Archit Bhatnagar 
+                    and top 1 choice Rachee Singh
+Did not schedule requested meeting between Cai Zhou 
+                    and top 2 choice Volodymyr Kuleshov
+Did not schedule requested meeting between Chengyu Huang 
+                    and top 2 choice Yoav Artzi
+Did not schedule requested meeting between Daniel Ritter 
+                    and top 2 choice Alexander (Sasha) Rush
+Did not schedule requested meeting between David Heineman 
+                    and top 2 choice Yoav Artzi
+Did not schedule requested meeting between Giovanni Monea 
+                    and top 1 choice Alexander (Sasha) Rush
+Did not schedule requested meeting between Hannah Gonzalez 
+                    and top 1 choice Alexander (Sasha) Rush
+Did not schedule requested meeting between Hanyu Chen 
+                    and top 2 choice Steve Marschner
+Did not schedule requested meeting between Hao Phung 
+                    and top 1 choice Noah Snavely
+Did not schedule requested meeting between Haozheng Yu 
+                    and top 2 choice Noah Snavely
+Did not schedule requested meeting between Hasindu Kanaththage 
+                    and top 2 choice Bharath Hariharan
+Did not schedule requested meeting between Jenny Wang 
+                    and top 1 choice Allison Koenecke
+Did not schedule requested meeting between Jingsen Zhu 
+                    and top 1 choice Noah Snavely
+Did not schedule requested meeting between Katherine Tian 
+                    and top 2 choice Yoav Artzi
+Did not schedule requested meeting between Kiyohiro Nakayama 
+                    and top 2 choice Noah Snavely
+Did not schedule requested meeting between Lakshya A Agrawal 
+                    and top 2 choice Saikat Dutta
+Did not schedule requested meeting between Linxi Zhao 
+                    and top 2 choice Yoav Artzi
+Did not schedule requested meeting between Megan Richards 
+                    and top 2 choice Yoav Artzi
+Did not schedule requested meeting between Nanye Ma 
+                    and top 2 choice Noah Snavely
+Did not schedule requested meeting between Natalie Neamtu 
+                    and top 2 choice Rachee Singh
+Did not schedule requested meeting between Pranjal Aggarwal 
+                    and top 2 choice Yoav Artzi
+Did not schedule requested meeting between Qiuhong Wei 
+                    and top 2 choice Noah Snavely
+Did not schedule requested meeting between Rajeev Datta 
+                    and top 2 choice Bharath Hariharan
+Did not schedule requested meeting between Rundong Luo 
+                    and top 1 choice Noah Snavely
+Did not schedule requested meeting between Seun Eisape 
+                    and top 2 choice Alexander (Sasha) Rush
+Did not schedule requested meeting between Seungju Han 
+                    and top 2 choice Alexander (Sasha) Rush
+Did not schedule requested meeting between Shankar Padmanabhan 
+                    and top 2 choice Yoav Artzi
+Did not schedule requested meeting between Shankar Padmanabhan 
+                           and secondary advocate Yoav Artzi
+Did not schedule requested meeting between Sheng-Yen Chou 
+                    and top 2 choice Kilian Weinberger
+Did not schedule requested meeting between Tianjian Li 
+                    and top 2 choice Alexander (Sasha) Rush
+Did not schedule requested meeting between Wenxuan Peng 
+                    and top 2 choice Noah Snavely
+Did not schedule requested meeting between Yair Feldman 
+                    and top 2 choice Alexander (Sasha) Rush
+Did not schedule requested meeting between Yijia Dai 
+                    and top 1 choice Alexander (Sasha) Rush
+Did not schedule requested meeting between Yijia Dai 
+                    and top 2 choice Yoav Artzi
+Did not schedule requested meeting between Zhengxin Zhang 
+                    and top 1 choice Alexander (Sasha) Rush
+Did not schedule requested meeting between Zizhang Li 
+                    and top 1 choice Noah Snavely

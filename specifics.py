@@ -21,7 +21,7 @@ minimum_meetings_per_student = 3
 maximum_meetings_per_student = 6
 maximum_meetings_per_professor = 10
 
-group_meeting_professors = []
+group_meeting_professors = ["Kilian Weinberger"]
 
 class StudentDataKeys(Enum):
     EMAIL = 'Email Address'
@@ -33,22 +33,16 @@ class StudentDataKeys(Enum):
     TUESDAY_TYPE = '26th'
     WEDNESDAY_TYPE = '27th'
     TIME_ZONE = 'Time Zone'
-    MONDAY_EARLIEST_MEETING_TIME = '25th Earliest Meeting Time'
-    TUESDAY_EARLIEST_MEETING_TIME = '26th Latest Meeting Time'
-    WEDNESDAY_EARLIEST_MEETING_TIME = '27th Latest Meeting Time'
     PREFERENCE1 = 'Preference 1'
     PREFERENCE2 = 'Preference 2'
     PREFERENCE3 = 'Preference 3'
     PREFERENCE4 = 'Preference 4'
     PREFERENCE5 = 'Preference 5'
     PREFERENCE6 = 'Preference 6'
-    PREFERENCE7 = 'Preference 6'
-    PREFERENCE8 = 'Preference 6'
     ADDITIONAL_FACULTY = 'Additional Faculty'
     PRIMARY_ADVOCATE = 'Advocate 1'
     ADVOCATE2 = 'Advocate 2'
-    ADVOCATE3 = 'Advocate 3'
-    ADVOCATE4 = 'Advocate 4'
+    
     
 
 
@@ -115,23 +109,12 @@ def parse_times(day, raw_times_string):
 
     return intervals
 
-MONDAY_MEETING_TIMES = parse_times(0, "11:15 - 11:30 a.m.,11:30 - 11:45 a.m.,11:45 - 12:00 p.m.,2:30 - 2:45 p.m.,"
-                                   "2:45 - 3:00 p.m.,3:00 - 3:15 p.m.,3:15 - 3:30 p.m.,3:30 - 3:45 p.m.,"
-                                   "3:45 - 4:00 p.m.,4:00 - 4:15 p.m.,4:15 - 4:30 p.m.,4:30 - 4:45 p.m.,"
-                                   "OPTIONAL Additional time: 4:45 - 5:00 p.m.,"
-                                   "OPTIONAL Additional Time: 5:00 - 5:15 p.m.,"
-                                   "OPTIONAL Additional Time: 5:15 - 5:30 p.m.")
-TUESDAY_MEETING_TIMES = parse_times(1, "9:00 - 9:15 a.m.,9:15 - 9:30 a.m.,9:30- 9:45 a.m.,9:45 - 10:00 a.m.,"
-                                   "10:00 - 10:15 a.m.,10:15 - 10: 30 a.m.,10:30 - 10:45 a.m.,10:45 - 11:00 a.m.,"
-                                   "2:00 - 2:15 p.m.,2:15 - 2:30 p.m.,2:30 - 2:45 p.m.,2:45 - 3:00 p.m.,"
-                                   "3:00 - 3:15 p.m.,3:15 - 3:30 p.m.,3:30 - 3:45 p.m.,3:45 - 4:00 p.m.,"
-                                   "OPTIONAL Additional Time: 4:00 - 4:15 p.m.,"
-                                   "OPTIONAL Additional Time: 4:15 - 4:30 p.m.,"
-                                   "OPTIONAL Additional Time: 4:30 - 4:45 p.m.,"
-                                   "OPTIONAL Additional Time: 4:45 - 5:00 p.m.")
+MONDAY_MEETING_TIMES = parse_times(0, "11:15-11:30 a.m., 11:35-11:50 a.m.,1:30-1:45 p.m.,1:50-2:05 p.m.,2:10-2:25 p.m.,2:30-2:45 p.m.,2:50-3:05 p.m.,3:10-3:25 p.m.")
+TUESDAY_MEETING_TIMES = parse_times(1, "10:00-10:15 a.m.,10:20-10:35 a.m.,10:40-10:55 a.m.,11:00-11:15 a.m.,11:20-11:35 a.m.,11:40-11:55 a.m.,2:00-2:15 p.m.,2:20-2:35 p.m.,2:40-2:55 p.m.,3:00-3:15 p.m.,3:20-3:35 p.m.,3:40-3:55 p.m.")
 
-WEDNESDAY_MEETING_TIMES = [TimeInterval(AbsoluteTime.fromDaysHoursMinutes(2, 10, 20), 35),
-                           TimeInterval(AbsoluteTime.fromDaysHoursMinutes(2, 13, 30), 90)]
+WEDNESDAY_MEETING_TIMES = parse_times(2, "10:20-10:35 a.m.,10:40-10:55 a.m.,11:00-11:15 a.m.,1:30-1:45 p.m.,1:50-2:05 p.m.,2:10-2:25 p.m.,2:30-2:45 p.m.")
+# WEDNESDAY_MEETING_TIMES = [TimeInterval(AbsoluteTime.fromDaysHoursMinutes(2, 10, 20), 35),
+#                            TimeInterval(AbsoluteTime.fromDaysHoursMinutes(2, 13, 30), 90)]
 
 
 ALL_MEETING_TIMES = MONDAY_MEETING_TIMES + TUESDAY_MEETING_TIMES + WEDNESDAY_MEETING_TIMES

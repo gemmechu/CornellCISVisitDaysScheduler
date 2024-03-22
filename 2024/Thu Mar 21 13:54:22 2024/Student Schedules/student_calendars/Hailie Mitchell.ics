@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+SUMMARY:Cornell Visit Day 1:1s
+BEGIN:VEVENT
+SUMMARY:Meeting with Saikat Dutta
+DTSTART;TZID=US/Eastern:20240325T141000
+DTEND;TZID=US/Eastern:20240325T142500
+LOCATION:https://cornell.zoom.us/my/saikat.dutta?pwd=YUUzMXRJN0RzSUk3aFhha
+ 1RsTkpCUT09
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Meeting with Owolabi Legunsen
+DTSTART;TZID=US/Eastern:20240326T112000
+DTEND;TZID=US/Eastern:20240326T113500
+LOCATION:https://cornell.zoom.us/my/legunsen?pwd=ZkJ1VjQ0OXU0US9lTXhEVUVrR
+ W1HZz09
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Meeting with Tapo Bhattacharjee
+DTSTART;TZID=US/Eastern:20240326T140000
+DTEND;TZID=US/Eastern:20240326T141500
+LOCATION:https://cornell.zoom.us/my/tapomayukh with password "cornell"
+END:VEVENT
+END:VCALENDAR

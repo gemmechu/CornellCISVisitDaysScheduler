@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+SUMMARY:Cornell Visit Day 1:1s
+BEGIN:VEVENT
+SUMMARY:Meeting with Guy Hoffman
+DTSTART;TZID=US/Eastern:20240326T104000
+DTEND;TZID=US/Eastern:20240326T105500
+LOCATION:https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2
+ Fcornell.zoom.us%2Fj%2F6649949898%3Fpwd%3DQ1h5SGhXajBpbTMzV0N4VEhvK0pWdz09
+ &data=05%7C02%7Crebecca.stewart%40cornell.edu%7Cd95ea2bb09ad4384c55c08dc47
+ 83b9af%7C5d7e43661b9b45cf8e79b14b27df46e1%7C0%7C0%7C638463878279654261%7CU
+ nknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiL
+ CJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=AwK7m3DJuW4ShKBnag2657%2FE8Y%2Fd21KsOrH%2
+ FpzGy0jo%3D&reserved=0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Meeting with Mark Campbell
+DTSTART;TZID=US/Eastern:20240325T145000
+DTEND;TZID=US/Eastern:20240325T150500
+LOCATION:https://cornell.zoom.us/my/markcampbell?pwd=dXVPSDBzelRZWlBZbVlCT
+ TlheFJwQT09
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Meeting with Angelique Taylor
+DTSTART;TZID=US/Eastern:20240326T154000
+DTEND;TZID=US/Eastern:20240326T155500
+LOCATION:https://cornell.zoom.us/j/9899519914?pwd=cWs3aG5GSzBxVEUrakxqeUxw
+ OU9uUT09
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Meeting with Tapo Bhattacharjee
+DTSTART;TZID=US/Eastern:20240326T152000
+DTEND;TZID=US/Eastern:20240326T153500
+LOCATION:https://cornell.zoom.us/my/tapomayukh with password "cornell"
+END:VEVENT
+END:VCALENDAR

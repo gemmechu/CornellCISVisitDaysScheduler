@@ -138,14 +138,14 @@ class Model:
     def value(self, professor, student, timeslot):
         if student.primary_advocate is not None and professor == student.primary_advocate:
             if timeslot.duration == 35:
-                value = 250
+                value = 350
             else:
-                value = 150
+                value = 350
         elif professor in student.other_advocates:
             if timeslot.duration == 35:
                 value = 240
             else:
-                value = 130
+                value = 330
         elif professor in student.preferred_professors:
             rank = student.preferred_professors.index(professor)
             value = 100 - 10 * rank

@@ -59,7 +59,9 @@ sticky_meetings = [m for m in meetings_to_keep if m not in meetings_no_need_to_k
 ### Initialize the solver ###
 solver = MIPModel("solver")
 solver.seed = 0
-meeting_slots = FIFTEEN_MINUTE_SLOTS + THIRTY_FIVE_MINUTE_SLOTS
+# meeting_slots = FIFTEEN_MINUTE_SLOTS + THIRTY_FIVE_MINUTE_SLOTS
+meeting_slots = FIFTEEN_MINUTE_SLOTS
+
 
 all_triples = [(s, p, t) for s in model.students() for p in model.professors() for t in meeting_slots]
 viable_triples = set((s, p, t) for (s, p, t) in all_triples if s.offering_at(t) and p.offering_at(t))
@@ -68,9 +70,9 @@ viable_triples = set((s, p, t) for (s, p, t) in all_triples if s.offering_at(t) 
 meeting_variables = {(s, p, t): solver.add_var(var_type=BINARY, name=str((s, p, t)))
                      for (s, p, t) in all_triples}
 
-office_hours_variables = {(p, t): solver.add_var(var_type=BINARY, name=str((p, t)))
-                          for p in model.professors()
-                          for t in OFFICE_HOURS_SLOTS}
+# office_hours_variables = {(p, t): solver.add_var(var_type=BINARY, name=str((p, t)))
+#                           for p in model.professors()
+#                           for t in OFFICE_HOURS_SLOTS}
 
 # Add an objective to the solver
 solver.objective = maximize(xsum([
@@ -79,8 +81,9 @@ solver.objective = maximize(xsum([
     for s in model.students()
     for t in meeting_slots if s.offering_at(t) and p.offering_at(t)
 ])
-                            + xsum([model.office_hours_value(p, o) * office_hours_variables[p, o]
-                                    for p in model.professors() for o in OFFICE_HOURS_SLOTS if p.offering_at(o)]))
+)
+                            # + xsum([model.office_hours_value(p, o) * office_hours_variables[p, o]
+                            #         for p in model.professors() for o in OFFICE_HOURS_SLOTS if p.offering_at(o)]))
 
 # Add constraints to the solver
 
@@ -133,32 +136,32 @@ for s in tqdm(model.students()):
                     if p1.building != p2.building:
                         solver += meeting_variables[s, p1, t1] + meeting_variables[s, p2, t2] <= 1
 
-overlapping_meeting_slots = [(t1, t2) for t1, t2 in itertools.combinations(meeting_slots, 2)
-                             if t1.conflicts(t2)]
+# overlapping_meeting_slots = [(t1, t2) for t1, t2 in itertools.combinations(meeting_slots, 2)
+#                              if t1.conflicts(t2)]
 
-for s in tqdm(model.students()):
-    for p1 in model.professors():
-        for t1, t2 in overlapping_meeting_slots:
-            solver += meeting_variables[s, p1, t1] + xsum(meeting_variables[s, p2, t2]
-                                                          for p2 in model.professors() if p2 != p1) <= 1
+# for s in tqdm(model.students()):
+#     for p1 in model.professors():
+#         for t1, t2 in overlapping_meeting_slots:
+#             solver += meeting_variables[s, p1, t1] + xsum(meeting_variables[s, p2, t2]
+#                                                           for p2 in model.professors() if p2 != p1) <= 1
 
-for p in tqdm(model.professors()):
-    for s1 in model.students():
-        for t1, t2 in overlapping_meeting_slots:
-            solver += meeting_variables[s1, p, t1] + xsum(meeting_variables[s2, p, t2]
-                                                          for s2 in model.students() if s2 != s1) <= 1
+# for p in tqdm(model.professors()):
+#     for s1 in model.students():
+#         for t1, t2 in overlapping_meeting_slots:
+#             solver += meeting_variables[s1, p, t1] + xsum(meeting_variables[s2, p, t2]
+#                                                           for s2 in model.students() if s2 != s1) <= 1
 
 # No professor can have more than 1 office hour.
-for p in model.professors():
-    solver += xsum([office_hours_variables[p, t] for t in OFFICE_HOURS_SLOTS]) <= 1
+# for p in model.professors():
+#     solver += xsum([office_hours_variables[p, t] for t in OFFICE_HOURS_SLOTS]) <= 1
 
 # No professor can have both an office hours and a meeting that conflicts with it.
-for o in OFFICE_HOURS_SLOTS:
-    for t in meeting_slots:
-        if t.conflicts(o):
-            for p in model.professors():
-                for s in model.students():
-                    solver += office_hours_variables[p, o] + meeting_variables[s, p, t] <= 1
+# for o in OFFICE_HOURS_SLOTS:
+#     for t in meeting_slots:
+#         if t.conflicts(o):
+#             for p in model.professors():
+#                 for s in model.students():
+#                     solver += office_hours_variables[p, o] + meeting_variables[s, p, t] <= 1
 
 
 ### Run the solver! ###
@@ -174,10 +177,10 @@ for (s, p, t) in viable_triples:
     if meeting_variables[s, p, t].x == 1:
         model.add_meeting(Meeting(t, s, p, Phase.SOLVER))
 
-for p in model.professors():
-    for o in OFFICE_HOURS_SLOTS:
-        if office_hours_variables[p, o].x == 1:
-            model.add_office_hours(p, o)
+# for p in model.professors():
+#     for o in OFFICE_HOURS_SLOTS:
+#         if office_hours_variables[p, o].x == 1:
+#             model.add_office_hours(p, o)
 
 # Add more sanity checks here if desired.
 model.check_schedule()

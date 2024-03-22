@@ -19,6 +19,8 @@ def read_students_from(filename):
                 raw_student_rows.append(each)
 
     for i, row in enumerate(raw_student_rows):
+        if row[sdk.FIRST_NAME.value] == "Samuel":
+            pass
         students.append(Student.make_student_from_raw(row))
 
     return students
@@ -76,9 +78,12 @@ class Student(Person):
 
         primary_advocate = raw_dictionary[sdk.PRIMARY_ADVOCATE.value].strip()
 
-        other_advocates = [raw_dictionary[key].strip() for key in [
-            sdk.ADVOCATE2.value, sdk.ADVOCATE3.value, sdk.ADVOCATE4.value
-                ]
+        # other_advocates = [raw_dictionary[key].strip() for key in [
+        #     sdk.ADVOCATE2.value, sdk.ADVOCATE3.value, sdk.ADVOCATE4.value
+        #         ]
+        #         if raw_dictionary[key].strip() != ""
+        # ]
+        other_advocates = [raw_dictionary[key].strip() for key in [sdk.ADVOCATE2.value]
                 if raw_dictionary[key].strip() != ""
         ]
 
@@ -131,13 +136,18 @@ class Student(Person):
             sdk.PREFERENCE4,
             sdk.PREFERENCE5,
             sdk.PREFERENCE6,
-            sdk.PREFERENCE7,
-            sdk.PREFERENCE8,
+            # sdk.PREFERENCE7,
+            # sdk.PREFERENCE8,
         ]:
             preference = raw_dictionary[key.value].strip()
             if preference != "":
                 preferred_professors.append(preference)
-
+        #additional faculity
+        # for key in sdk.ADDITIONAL_FACULTY:
+        #     preference = raw_dictionary[key.value].strip()
+        #     if preference != "":
+        #         preference.split(",")
+        #         preferred_professors.append(preference)
         return Student(full_name,
                        primary_area,
                        secondary_area,
